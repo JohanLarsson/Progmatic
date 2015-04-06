@@ -2,12 +2,19 @@
     list-style: none;
     display: inline;
     vertical-align: middle;
-    font-size: 36px;
+}
+.navigation-links a{
+    padding: 20px;
+    color: #373737;
+    vertical-align: middle;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: 600;
 }
 
 li {
     display: inline;
-    margin: 20px;
 }
 
 .logo{
@@ -15,8 +22,9 @@ li {
     vertical-align: middle;
 }
 
-body,p, h1 {
-  font-size: 18px;
-  line-height: 22px;
-  color: gray;
+body {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
 }
