@@ -167,8 +167,16 @@ function init() {
     var mapElement = document.getElementById("map");
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [new google.maps.Marker({
-        icon: "https://mapbuildr.com/assets/img/markers/ellipse-green.png",
+        icon: {
+            path: google.maps.SymbolPath.CIRCLE,
+            strokeWeight: 0,
+            fillOpacity: 1,
+            fillColor: '#679469',
+            scale: 8
+        },
         position: new google.maps.LatLng(60.621607, 16.775918000000047),
         map: map,
+        title: "progmatic",
+        desc: "här finner du oss"
     })];
 }
