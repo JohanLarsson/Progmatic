@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     height: 100%;
+    z-index: 20;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -53,7 +54,7 @@
     font-size: 25px;
 }
 
-#map, #contact-info {
+#map {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -69,6 +70,7 @@
 
 #contact-info {
     z-index: 10;
+    position: absolute;
     top: 100px;
     left: 100px;
 }
@@ -79,4 +81,5 @@ body {
     line-height: 22px;
     font-family: 'Open Sans', sans-serif;
     color: #7e7e7e;
+    margin: 0;
 }
