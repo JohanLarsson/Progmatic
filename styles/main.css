@@ -69,6 +69,8 @@
 
 #contact-info {
     z-index: 10;
+    top: 100px;
+    left: 100px;
 }
 
 body {
