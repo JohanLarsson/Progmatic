@@ -1,8 +1,14 @@
-﻿//google.maps.event.addDomListener(window, "load", init);
-var map;
+﻿var map;
 function init() {
+    var mapElement = document.getElementById("map");
+    var center;
+    if (mapElement.clientHeight > mapElement.clientWidth) {
+        center = new google.maps.LatLng(62.5, 25);
+    } else {
+        center = new google.maps.LatLng(62.5, 29);
+    }
     var mapOptions = {
-        center: new google.maps.LatLng(58.802362, 29.197997),
+        center: center,
         zoom: 4,
         zoomControl: false,
         disableDoubleClickZoom: true,
@@ -164,8 +170,9 @@ function init() {
 }
         ]
     }
-    var mapElement = document.getElementById("map");
+
     var map = new google.maps.Map(mapElement, mapOptions);
+    var progmaticPosition = new google.maps.LatLng(60.6, 16.8);
     var locations = [new google.maps.Marker({
         icon: {
             path: google.maps.SymbolPath.CIRCLE,
@@ -174,7 +181,7 @@ function init() {
             fillColor: '#679469',
             scale: 8
         },
-        position: new google.maps.LatLng(60.621607, 16.775918000000047),
+        position: progmaticPosition,
         map: map,
         title: "progmatic",
         desc: "här finner du oss"
