@@ -86,8 +86,8 @@
 #contact-info {
     z-index: 10;
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 25%;
+    left: 5%;
 }
 
 body {
