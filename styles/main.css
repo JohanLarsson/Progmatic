@@ -50,6 +50,16 @@
     color: #679469;
 }
 
+#contact-info {
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+    /*color: #3d583e;*/
+}
+
 #contact-info dt {
     font-weight: 600;
     /*color: #3d583e;*/
